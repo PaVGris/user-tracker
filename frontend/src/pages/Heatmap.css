@@ -1,0 +1,108 @@
+/* Heatmap Page Styles */
+.heatmap-page-container {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Выравнивание по верхнему краю, а не по центру */
+    min-height: calc(100vh - 60px); /* Учитываем возможные отступы */
+    padding: 30px 20px;
+    background-color: #f5f5f5;
+}
+
+.heatmap-content {
+    width: 100%;
+    max-width: 1000px;
+    background-color: white;
+    padding: 30px;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+}
+
+.heatmap-title {
+    text-align: center;
+    font-size: 28px;
+    font-weight: bold;
+    margin-bottom: 25px;
+    color: #333;
+}
+
+.heatmap-controls {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 15px;
+    margin-bottom: 25px;
+    justify-content: center;
+}
+
+.heatmap-button {
+    padding: 10px 20px;
+    border: none;
+    border-radius: 6px;
+    font-size: 14px;
+    cursor: pointer;
+    transition: all 0.2s ease;
+}
+
+.back-button {
+    background-color: #6a5acd;
+    color: white;
+}
+
+.back-button:hover {
+    background-color: #5a4abd;
+}
+
+.generate-button {
+    background-color: #4CAF50;
+    color: white;
+}
+
+.generate-button:hover {
+    background-color: #3d8b40;
+}
+
+.heatmap-input {
+    padding: 10px 15px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+    font-size: 14px;
+    min-width: 200px;
+}
+
+.heatmap-file-input {
+    padding: 10px;
+    border: 1px solid #ddd;
+    border-radius: 6px;
+}
+
+.heatmap-image-container {
+    position: relative;
+    width: 100%;
+    max-width: 800px;
+    margin: 0 auto;
+    border: 1px solid #eee;
+    border-radius: 8px;
+    overflow: hidden;
+}
+
+.heatmap-image {
+    width: 100%;
+    opacity: 0.4;
+    display: block;
+    position: relative;
+    z-index: 1;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .heatmap-controls {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .heatmap-input,
+    .heatmap-file-input,
+    .heatmap-button {
+        width: 100%;
+        max-width: 300px;
+    }
+}

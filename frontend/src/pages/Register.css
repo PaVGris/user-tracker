@@ -1,0 +1,74 @@
+/* Register.css */
+
+form {
+    max-width: 400px;
+    margin: 100px auto;
+    padding: 30px;
+    background: #ffffff;
+    border-radius: 15px;
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.1);
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+}
+
+h2 {
+    text-align: center;
+    margin-bottom: 10px;
+    color: #333;
+}
+
+input {
+    padding: 12px 15px;
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    font-size: 16px;
+    transition: border-color 0.3s ease;
+}
+
+input:focus {
+    border-color: #28a745;
+    outline: none;
+}
+
+button {
+    padding: 12px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 10px;
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+button:hover {
+    background-color: #218838;
+}
+
+.secondary-button {
+    background: none;
+    border: none;
+    padding: 10px;
+    font-size: 14px;
+    color: #007bff;
+    cursor: pointer;
+    text-decoration: none;
+    margin-top: -10px;
+
+    /* убираем поведение кнопки */
+    outline: none;
+    box-shadow: none;
+    transition: none;
+}
+
+.secondary-button:hover,
+.secondary-button:focus,
+.secondary-button:active {
+    color: #007bff;
+    background: none;
+    text-decoration: none;
+    outline: none;
+    box-shadow: none;
+}
