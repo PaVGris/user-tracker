@@ -9,9 +9,9 @@
 - Установленный [Docker Compose](https://docs.docker.com/compose/install/)
 - Порты 3001 (frontend), 5000 (backend)
 
-### Установка и запуск
+## Установка и запуск
 
-## Клонируйте репозиторий:
+### Клонируйте репозиторий:
 ```bash
 git clone https://github.com/PaVGris/user-tracker.git
 cd user-tracker
@@ -25,7 +25,7 @@ cd user-tracker
 | Хранилище 1     | `clickhouse/docker-compose.yml` | ClickHouse       | Аналитическое хранилище |
 | Хранилище 2     | `postgres/docker-compose.yml` | PostgreSQL       | Реляционная БД          |
 
-## 🚀 Запуск системы
+## Запуск системы
 
 ### 1. Установите зависимости
 - [Docker](https://docs.docker.com/engine/install/)
