@@ -18,12 +18,12 @@ cd user-tracker
 ```
 
 ## Структура проекта
-| Компонент       | Файл               | Технологии       | Описание                |
-|-----------------|--------------------|------------------|-------------------------|
-| Основная инфра  | `docker-compose.yml` | Kafka + ZooKeeper | Брокер сообщений |
-| Фронтенд        | `frontend/docker-compose.yml` | Grafana + React  | Мониторинг и интерфейс  |
-| Хранилище 1     | `clickhouse/docker-compose.yml` | ClickHouse       | Аналитическое хранилище |
-| Хранилище 2     | `postgres/docker-compose.yml` | PostgreSQL       | Реляционная БД          |
+| Файл               | Технологии       | Описание                |
+|--------------------|------------------|-------------------------|
+| `docker-compose.yml` | Kafka + ZooKeeper | Брокер сообщений |
+| `frontend/docker-compose.yml` | Grafana + React  | Мониторинг и интерфейс  |
+| `clickhouse/docker-compose.yml` | ClickHouse       | Аналитическое хранилище |
+| `postgres/docker-compose.yml` | PostgreSQL       | Реляционная БД          |
 
 ## Запуск системы
 
